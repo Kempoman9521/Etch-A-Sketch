@@ -20,4 +20,7 @@ body{
 
 .gridBox {
 box-sizing: border-box;
+border-left: solid;
+border-right: solid;
+flex: 1;
 }
