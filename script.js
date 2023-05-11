@@ -16,11 +16,15 @@ function fillContainers() {
         for (let i = 0; i < 16; i++) {
         const childElement = document.createElement("div");
     childElement.classList.toggle("gridBox");
+    childElement.addEventListener("mouseenter", () => {
+        childElement.style.backgroundColor = "blue";
+    })
         gridContainer.appendChild(childElement);
         }
     })
 }
 
 fillContainers();
+
 
 
