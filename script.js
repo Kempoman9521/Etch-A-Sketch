@@ -2,8 +2,8 @@ const mainContainer = document.querySelector("#main-container");
 
 function createContainers() {
 for(let i = 0; i < 16; i++) {
-    const div = document.createElement("div");
-    div.classList.toggle("grid");
+    const container = document.createElement("div");
+    container.classList.toggle("gridContainer");
     mainContainer.appendChild(div);
 }
 }
