@@ -13,9 +13,11 @@ const gridContainer = document.querySelectorAll(".gridContainer");
 
 function fillContainers() {
     gridContainer.forEach((gridContainer) => {
+        for (let i = 0; i < 16; i++) {
         const childElement = document.createElement("div");
     childElement.classList.toggle("gridBox");
         gridContainer.appendChild(childElement);
+        }
     })
 }
 
