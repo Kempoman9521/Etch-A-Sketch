@@ -11,7 +11,7 @@ body{
     box-sizing: border-box;
     flex:1
 }
-.grid {
+.gridContainer {
     border: solid;
     box-sizing:border-box;
     flex: 1;
