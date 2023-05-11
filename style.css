@@ -12,7 +12,12 @@ body{
     flex:1
 }
 .gridContainer {
+    display: flex;
     border: solid;
     box-sizing:border-box;
     flex: 1;
+}
+
+.gridBox {
+box-sizing: border-box;
 }
