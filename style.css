@@ -9,18 +9,15 @@ body{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    flex:1
 }
 .gridContainer {
     display: flex;
     border: solid;
     box-sizing:border-box;
-    flex: 1;
 }
 
 .gridBox {
 box-sizing: border-box;
 border-left: solid;
 border-right: solid;
-flex: 1;
 }
