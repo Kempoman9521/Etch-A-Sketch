@@ -10,10 +10,11 @@ body{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    border-color: brown;
+    border:5px solid green
 }
 .gridContainer {
     display: flex;
-    border: solid;
     box-sizing:border-box;
     height: 50px;
     width: 600px;
@@ -21,7 +22,5 @@ body{
 
 .gridBox {
 box-sizing: border-box;
-border-left: solid;
-border-right: solid;
 flex: 1;
 }
