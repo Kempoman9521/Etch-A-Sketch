@@ -31,8 +31,8 @@ const button = document.querySelector("button");
 button.addEventListener("click", () => {
     const promptVal = prompt("Enter a number under 100.");
     if(promptVal < 100) {
-        createContainers();
-        fillContainers();
+        createContainers(promptVal);
+        fillContainers(promptVal);
     }
 })
 
