@@ -7,34 +7,35 @@ for(let i = 0; i < promptVal; i++) {
     mainContainer.appendChild(container);
 }
 }
-createContainers();
 
-const gridContainer = document.querySelectorAll(".gridContainer");
 
 function fillContainers(promptVal) {
-    gridContainer.forEach((gridContainer) => {
+    const gridContainer = document.querySelectorAll(".gridContainer");
+    gridContainer.forEach((container) => {
         for (let i = 0; i < promptVal; i++) {
         const childElement = document.createElement("div");
     childElement.classList.toggle("gridBox");
     childElement.addEventListener("mouseenter", () => {
         childElement.style.backgroundColor = "blue";
     })
-        gridContainer.appendChild(childElement);
+        container.appendChild(childElement);
         }
     })
 }
 
-fillContainers();
 
 const button = document.querySelector("button");
 
 button.addEventListener("click", () => {
     const promptVal = +prompt("Enter a number under 100.");
-    if(promptVal < 100) {
+    if(promptVal <= 100) {
+        while (mainContainer.firstChild) {
+            mainContainer.removeChild(mainContainer.firstChild);
+        }
         createContainers(promptVal);
         fillContainers(promptVal);
     }
-})
+});
 
 
 
