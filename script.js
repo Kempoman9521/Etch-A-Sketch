@@ -1,6 +1,6 @@
 const mainContainer = document.querySelector("#main-container");
 
-function createContainers() {
+function createContainers(promptVal) {
 for(let i = 0; i < 16; i++) {
     const container = document.createElement("div");
     container.classList.toggle("gridContainer");
@@ -11,7 +11,7 @@ createContainers();
 
 const gridContainer = document.querySelectorAll(".gridContainer");
 
-function fillContainers() {
+function fillContainers(promptVal) {
     gridContainer.forEach((gridContainer) => {
         for (let i = 0; i < 16; i++) {
         const childElement = document.createElement("div");
@@ -31,7 +31,8 @@ const button = document.querySelector("button");
 button.addEventListener("click", () => {
     const gridNumber = prompt("Enter a number under 100.");
     if(gridNumber < 100) {
-
+        createContainers();
+        fillContainers();
     }
 })
 
