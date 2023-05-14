@@ -26,5 +26,14 @@ function fillContainers() {
 
 fillContainers();
 
+const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+    const gridNumber = prompt("Enter a number under 100.");
+    if(gridNumber < 100) {
+
+    }
+})
+
 
 
