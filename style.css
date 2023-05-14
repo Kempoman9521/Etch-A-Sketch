@@ -15,10 +15,12 @@ body{
     display: flex;
     border: solid;
     box-sizing:border-box;
+    flex: 1;
 }
 
 .gridBox {
 box-sizing: border-box;
 border-left: solid;
 border-right: solid;
+flex: 1;
 }
