@@ -5,6 +5,7 @@ body{
     display: flex;
     margin: 0;
     justify-content: center;
+    background-color:rebeccapurple;
 }
 #main-container {
     display: flex;
